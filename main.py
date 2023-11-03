@@ -16,7 +16,7 @@ DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 START_TEXT = """Hello {},
 I am an under 5MB media or file to telegra.ph link uploader bot.
 
-Made by @FayasNoushad"""
+Made by @synaxnetwork"""
 
 HELP_TEXT = """**About Me**
 
@@ -29,9 +29,7 @@ ABOUT_TEXT = """**About Me**
 
 - **Bot :** `Telegraph Uploader`
 - **Developer :**
-  • [GitHub](https://github.com/FayasNoushad)
-  • [Telegram](https://telegram.me/FayasNoushad)
-- **Source :** [Click here](https://github.com/FayasNoushad/Telegraph-Uploader-Bot)
+  • [Telegram](https://telegram.me/s4n6x)
 - **Language :** [Python3](https://python.org)
 - **Library :** [Pyrogram](https://pyrogram.org)"""
 
@@ -140,7 +138,7 @@ async def getmedia(bot, update):
         )
         return
     
-    text=f"**Link :-** `https://telegra.ph{response[0]}`\n\n**Join :-** @FayasNoushad"
+    text=f"**Link :-** `https://telegra.ph{response[0]}`\n\n**Join :-** @synaxnetwork"
     reply_markup=InlineKeyboardMarkup(
         [
             [
@@ -148,7 +146,7 @@ async def getmedia(bot, update):
                 InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
             ],
             [
-                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/FayasNoushad")
+                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/synaxnetwork")
             ]
         ]
     )
